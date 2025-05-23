@@ -43,7 +43,7 @@ Veggie Buddy is a comprehensive web application designed to help urban dwellers 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/shreyazh/veggie-buddy.git
+git clone https://github.com/shreyazh/Veggie-Buddy.git
 cd project
 ```
 
