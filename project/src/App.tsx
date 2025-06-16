@@ -6,6 +6,7 @@ import PlantInfoPage from './pages/PlantInfoPage';
 import GardeningTipsPage from './pages/GardeningTipsPage';
 import CommunityPage from './pages/CommunityPage';
 import { WeatherProvider } from './context/WeatherContext';
+import DashboardPage from './pages/DashboardPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="plants" element={<PlantInfoPage />} />
             <Route path="tips" element={<GardeningTipsPage />} />
             <Route path="community" element={<CommunityPage />} />
+            <Route path="dashboard" element={<DashboardPage />} />
           </Route>
         </Routes>
       </Router>
