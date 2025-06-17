@@ -15,6 +15,8 @@ export const fetchAndStoreSensorData = async () => {
     const data = new SensorData({
       temperature: parseFloat(latest.field1),
       humidity: parseFloat(latest.field2),
+      moisture: parseFloat(latest.field3),
+      motorStatus: latest.field4?.trim() === "1", // motor ON if "1"
       timestamp: new Date(latest.created_at),
     });
 

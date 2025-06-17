@@ -6,6 +6,7 @@ export interface SensorData {
   temperature: number;
   humidity: number;
   moisture: number;
+  motorStatus: boolean; // add this
   timestamp: string;
 }
 

@@ -4,31 +4,22 @@ interface Props {
   temperature: number;
   humidity: number;
   moisture: number;
+  motorStatus: boolean;
 }
 
-const AlertBanner: React.FC<Props> = ({ temperature, humidity, moisture }) => {
+const AlertBanner: React.FC<Props> = ({ temperature, humidity, moisture, motorStatus }) => {
   const alerts: string[] = [];
 
-  // Moisture check
-  if (moisture < 30) {
-    alerts.push("🚨 Moisture too low! Water your plant.");
-  } else if (moisture > 80) {
-    alerts.push("⚠️ Moisture too high! Avoid overwatering.");
-  }
+  if (moisture < 30) alerts.push("🚨 Moisture too low! Water your plant.");
+  else if (moisture > 80) alerts.push("⚠️ Moisture too high! Avoid overwatering.");
 
-  // Temperature check
-  if (temperature > 10) {
-    alerts.push("❄️ Temperature too low! Protect the plant from cold.");
-  } else if (temperature > 35) {
-    alerts.push("🔥 Temperature too high! Move plant to a cooler area.");
-  }
+  if (temperature < 10) alerts.push("❄️ Temperature too low!");
+  else if (temperature > 35) alerts.push("🔥 Temperature too high!");
 
-  // Humidity check
-  if (humidity < 30) {
-    alerts.push("💧 Humidity too low! Consider misting or humidifier.");
-  } else if (humidity > 85) {
-    alerts.push("🌫️ Humidity too high! Improve ventilation.");
-  }
+  if (humidity < 30) alerts.push("💧 Humidity too low!");
+  else if (humidity > 85) alerts.push("🌫️ Humidity too high!");
+
+  if (motorStatus) alerts.push("🔔 Motor is ON due to low moisture!");
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md">
@@ -41,9 +32,7 @@ const AlertBanner: React.FC<Props> = ({ temperature, humidity, moisture }) => {
           ))}
         </ul>
       ) : (
-        <p className="text-green-600 font-medium">
-          ✅ All sensor readings are in a healthy range!
-        </p>
+        <p className="text-green-600 font-medium">✅ All readings are in a healthy range!</p>
       )}
     </div>
   );

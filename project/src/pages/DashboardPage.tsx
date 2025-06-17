@@ -43,7 +43,13 @@ const DashboardPage: React.FC = () => {
   return (
     <div className="p-6 space-y-6">
       <SensorCard data={data} />
-      <AlertBanner moisture={data.moisture} />
+      <AlertBanner
+        temperature={data.temperature}
+        humidity={data.humidity}
+        moisture={data.moisture}
+        motorStatus={data.motorStatus}
+      />
+
       <SensorChart data={history} />
     </div>
   );
