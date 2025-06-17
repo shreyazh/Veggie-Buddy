@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ChevronRight, Leaf, Cloud, Users, Grid } from 'lucide-react';
+import { ChevronRight, Leaf, Cloud, Users, Grid, BookOpen, HelpCircle, Video, Mail } from 'lucide-react';
 import FeatureCard from '../components/home/FeatureCard';
 import TestimonialCard from '../components/home/TestimonialCard';
 import PlantPreview from '../components/home/PlantPreview';
@@ -97,7 +97,7 @@ const HomePage = () => {
             />
             <PlantPreview 
               name="Bell Peppers"
-              image="https://images.pexels.com/photos/1435902/pexels-photo-1435902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              image="https://images.healthshots.com/healthshots/en/uploads/2024/07/24112903/1-40.jpg"
               difficulty="Medium"
               sunlight="Full Sun"
               waterNeeds="Medium"
@@ -151,6 +151,45 @@ const HomePage = () => {
               author="Elena R."
               location="Miami"
               image="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Resources Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-900">Resources & Support</h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Everything you need to succeed in your rooftop gardening journey.
+            </p>
+          </div>
+          
+          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <FeatureCard 
+              icon={<BookOpen className="h-8 w-8 text-green-600" />}
+              title="Blog"
+              description="Stay updated with the latest gardening tips, success stories, and expert advice."
+              link="/blog"
+            />
+            <FeatureCard 
+              icon={<Video className="h-8 w-8 text-green-600" />}
+              title="Tutorials"
+              description="Step-by-step video guides and articles to help you master rooftop gardening."
+              link="/tutorials"
+            />
+            <FeatureCard 
+              icon={<HelpCircle className="h-8 w-8 text-green-600" />}
+              title="FAQs"
+              description="Find answers to common questions about rooftop gardening and plant care."
+              link="/faqs"
+            />
+            <FeatureCard 
+              icon={<Mail className="h-8 w-8 text-green-600" />}
+              title="Contact Support"
+              description="Get help from our gardening experts and support team."
+              link="/contact"
             />
           </div>
         </div>

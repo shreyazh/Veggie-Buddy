@@ -9,12 +9,19 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navLinks = [
+  const mainNavLinks = [
     { to: '/', label: 'Home' },
     { to: '/layout-designer', label: 'Layout Designer' },
     { to: '/plants', label: 'Plants' },
     { to: '/tips', label: 'Gardening Tips' },
     { to: '/community', label: 'Community' },
+  ];
+
+  const supportNavLinks = [
+    { to: '/blog', label: 'Blog' },
+    { to: '/tutorials', label: 'Tutorials' },
+    { to: '/faqs', label: 'FAQs' },
+    { to: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -30,7 +37,23 @@ const Navbar = () => {
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-4">
-            {navLinks.map((link) => (
+            {mainNavLinks.map((link) => (
+              <NavLink
+                key={link.label}
+                to={link.to}
+                className={({ isActive }) =>
+                  `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                    isActive
+                      ? 'text-green-700 bg-green-50'
+                      : 'text-gray-600 hover:text-green-600 hover:bg-green-50'
+                  }`
+                }
+              >
+                {link.label}
+              </NavLink>
+            ))}
+            <div className="h-6 w-px bg-gray-200 mx-2" />
+            {supportNavLinks.map((link) => (
               <NavLink
                 key={link.label}
                 to={link.to}
@@ -70,7 +93,25 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            {navLinks.map((link) => (
+            <div className="px-3 py-2 text-sm font-medium text-gray-500">Main</div>
+            {mainNavLinks.map((link) => (
+              <NavLink
+                key={link.label}
+                to={link.to}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded-md text-base font-medium ${
+                    isActive
+                      ? 'text-green-700 bg-green-50'
+                      : 'text-gray-600 hover:text-green-600 hover:bg-green-50'
+                  }`
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
+              </NavLink>
+            ))}
+            <div className="px-3 py-2 text-sm font-medium text-gray-500">Support</div>
+            {supportNavLinks.map((link) => (
               <NavLink
                 key={link.label}
                 to={link.to}
