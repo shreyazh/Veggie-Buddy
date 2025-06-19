@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Mail, Lock, User, Eye, EyeOff, ArrowRight } from 'lucide-react';
+import { Mail, Lock, User, Eye, EyeOff, ArrowRight, Check, X } from 'lucide-react';
 
 const SignInPage = () => {
   const navigate = useNavigate();
@@ -18,6 +18,23 @@ const SignInPage = () => {
     name: '',
     confirmPassword: ''
   });
+
+  const validatePassword = (password: string) => {
+    const hasUpperCase = /[A-Z]/.test(password);
+    const hasLowerCase = /[a-z]/.test(password);
+    const hasNumbers = /\d/.test(password);
+    const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+    const isLongEnough = password.length >= 8;
+
+    return {
+      hasUpperCase,
+      hasLowerCase,
+      hasNumbers,
+      hasSpecialChar,
+      isLongEnough,
+      isValid: hasUpperCase && hasLowerCase && hasNumbers && hasSpecialChar && isLongEnough
+    };
+  };
 
   const validateForm = () => {
     const newErrors = {
@@ -41,9 +58,12 @@ const SignInPage = () => {
     if (!formData.password) {
       newErrors.password = 'Password is required';
       isValid = false;
-    } else if (formData.password.length < 6) {
-      newErrors.password = 'Password must be at least 6 characters';
-      isValid = false;
+    } else {
+      const passwordValidation = validatePassword(formData.password);
+      if (!passwordValidation.isValid) {
+        newErrors.password = 'Password does not meet requirements';
+        isValid = false;
+      }
     }
 
     // Name validation for registration
@@ -189,6 +209,7 @@ const SignInPage = () => {
                   type={showPassword ? 'text' : 'password'}
                   autoComplete="current-password"
                   required
+                  minLength={8}
                   value={formData.password}
                   onChange={handleChange}
                   className={`block w-full pl-10 pr-10 py-2 border ${
@@ -211,6 +232,31 @@ const SignInPage = () => {
               </div>
               {errors.password && (
                 <p className="mt-2 text-sm text-red-600">{errors.password}</p>
+              )}
+              {formData.password && (
+                <div className="mt-2 space-y-1">
+                  <p className="text-sm font-medium text-gray-700">Password Requirements:</p>
+                  <ul className="text-sm space-y-1">
+                    {Object.entries(validatePassword(formData.password)).map(([key, value]) => {
+                      if (key === 'isValid') return null;
+                      const label = key
+                        .replace(/([A-Z])/g, ' $1')
+                        .replace(/^./, str => str.toUpperCase());
+                      return (
+                        <li key={key} className="flex items-center">
+                          {value ? (
+                            <Check className="h-4 w-4 text-green-500 mr-2" />
+                          ) : (
+                            <X className="h-4 w-4 text-red-500 mr-2" />
+                          )}
+                          <span className={value ? 'text-green-600' : 'text-red-600'}>
+                            {label}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
               )}
             </div>
 

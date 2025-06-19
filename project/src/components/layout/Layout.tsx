@@ -13,7 +13,7 @@ const Layout = () => {
       <main className="flex-grow">
         {weather && (
           <div className="bg-green-50 py-2 px-4 text-sm text-green-800 flex justify-center items-center border-b border-green-200">
-            <span>Today: {weather.condition}, {weather.temperature}°C</span>
+            <span>{weather.location}: {weather.condition}, {weather.temperature}°C</span>
             {weather.condition === 'Sunny' && (
               <span className="ml-2">Great day for gardening!</span>
             )}

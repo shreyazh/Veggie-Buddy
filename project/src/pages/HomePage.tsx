@@ -21,10 +21,10 @@ const HomePage = () => {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link 
-                to="/layout-designer" 
+                to="/dashboard" 
                 className="px-6 py-3 bg-white text-green-700 rounded-md font-medium hover:bg-green-50 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center"
               >
-                Design Your Garden
+                Check Dashboard
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Link>
               <Link 
@@ -136,19 +136,19 @@ const HomePage = () => {
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
             <TestimonialCard 
               quote="Veggie Buddy transformed my empty rooftop into a thriving garden. I'm harvesting fresh vegetables every week!"
-              author="Sarah J."
+              author="Isha Dungrani"
               location="New York"
               image="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
             <TestimonialCard 
               quote="As a complete beginner, I was intimidated by gardening. The step-by-step guides made it so easy to get started."
-              author="Michael T."
+              author="Anshumaan Kumar"
               location="Chicago"
               image="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
             <TestimonialCard 
               quote="The layout designer helped me maximize my small rooftop space. Now I grow enough vegetables to share with neighbors."
-              author="Elena R."
+              author="Soumya"
               location="Miami"
               image="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
