@@ -68,9 +68,12 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <button className="ml-4 px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors duration-200">
+            <NavLink
+              to="/signin"
+              className="ml-4 px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors duration-200"
+            >
               Sign In
-            </button>
+            </NavLink>
           </div>
           
           {/* Mobile menu button */}
@@ -127,9 +130,13 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <button className="mt-2 w-full px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors duration-200">
+            <NavLink
+              to="/signin"
+              className="mt-2 w-full px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Sign In
-            </button>
+            </NavLink>
           </div>
         </div>
       )}

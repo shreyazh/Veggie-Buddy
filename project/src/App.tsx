@@ -11,6 +11,7 @@ import TutorialsPage from './pages/TutorialsPage';
 import ContactSupportPage from './pages/ContactSupportPage';
 import { WeatherProvider } from './context/WeatherContext';
 import DashboardPage from './pages/DashboardPage';
+import SignInPage from './pages/SignInPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="faqs" element={<FAQsPage />} />
             <Route path="tutorials" element={<TutorialsPage />} />
             <Route path="contact" element={<ContactSupportPage />} />
+            <Route path="signin" element={<SignInPage />} />
           </Route>
         </Routes>
       </Router>
