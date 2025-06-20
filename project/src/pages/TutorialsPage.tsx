@@ -40,7 +40,7 @@ const TutorialsPage = () => {
       description: "Choose the right plants for your specific rooftop conditions.",
       duration: "20 min",
       level: "Beginner",
-      image: "https://i.ytimg.com/vi/nmn4Na3xmv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB8TYoY5Oqtwzx0h55hNItXLrf9Rw",
+      image: "https://i.pinimg.com/736x/84/d8/a1/84d8a1afc393612acc698b3543377bee.jpg",
       icon: <Sun className="h-6 w-6 text-green-600" />,
       path: "/tutorials/plant-selection"
     },
@@ -50,7 +50,7 @@ const TutorialsPage = () => {
       description: "Learn effective organic methods to protect your plants from pests.",
       duration: "25 min",
       level: "Intermediate",
-      image: "https://images.unsplash.com/photo-1585338103348-fd74a0a7f938?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaIASyAIaZ5P8gC1VySWGalJaAKWQ98qlAjQ&s",
       icon: <Bug className="h-6 w-6 text-green-600" />,
       path: "/tutorials/pest-management"
     },
@@ -60,7 +60,7 @@ const TutorialsPage = () => {
       description: "Strategies to protect your garden from extreme weather conditions.",
       duration: "20 min",
       level: "Intermediate",
-      image: "https://images.unsplash.com/photo-1501691223387-dd0506c89ac8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      image: "https://www.greenproventures.com/wp-content/uploads/2023/07/Harnessing-Rain-Shelters-Empowering-Continuous-Farming-during-the-Monsoon-Season.jpg",
       icon: <Wind className="h-6 w-6 text-green-600" />,
       path: "/tutorials/weather-protection"
     }

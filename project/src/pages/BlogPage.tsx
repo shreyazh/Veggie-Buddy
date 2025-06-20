@@ -16,7 +16,7 @@ const BlogPage = () => {
       excerpt: "Discover which plants thrive in urban environments and how to care for them.",
       date: "March 10, 2024",
       author: "Mike Brown",
-      image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      image: "https://help.gardeningexpress.co.uk/wp-content/uploads/2023/07/1-1.png"
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const BlogPage = () => {
       excerpt: "Explore eco-friendly gardening techniques that benefit both your plants and the environment.",
       date: "March 5, 2024",
       author: "Emma Wilson",
-      image: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      image: "https://millcreekgardens.com/wp-content/uploads/2016/02/Sustainable-Gardening.jpg"
     }
   ];
 

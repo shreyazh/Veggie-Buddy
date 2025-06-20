@@ -176,7 +176,7 @@ const GardeningTipsPage = () => {
                     </div>
                   </div>
                   <img 
-                    src="https://images.pexels.com/photos/7728088/pexels-photo-7728088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    src="https://en.idei.club/uploads/posts/2023-06/1686847869_en-idei-club-p-rooftop-farming-dizain-1.jpg" 
                     alt="Gardening" 
                     className="w-full h-64 object-cover rounded-lg"
                   />

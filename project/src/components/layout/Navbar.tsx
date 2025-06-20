@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Sprout, Menu, X } from 'lucide-react';
+import { useUser } from '../../context/UserContext';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user } = useUser();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -68,12 +70,16 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <NavLink
-              to="/signin"
-              className="ml-4 px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors duration-200"
-            >
-              Sign In
-            </NavLink>
+            {user ? (
+              <span className="ml-4 px-4 py-2 rounded-md bg-green-100 text-green-800 font-semibold">Hey {user.name}</span>
+            ) : (
+              <NavLink
+                to="/signin"
+                className="ml-4 px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors duration-200"
+              >
+                Sign In
+              </NavLink>
+            )}
           </div>
           
           {/* Mobile menu button */}
@@ -130,13 +136,17 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <NavLink
-              to="/signin"
-              className="mt-2 w-full px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Sign In
-            </NavLink>
+            {user ? (
+              <span className="mt-2 w-full px-4 py-2 rounded-md bg-green-100 text-green-800 font-semibold block text-center">Hey {user.name}</span>
+            ) : (
+              <NavLink
+                to="/signin"
+                className="mt-2 w-full px-4 py-2 rounded-md bg-green-600 text-white hover:bg-green-700 transition-colors duration-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sign In
+              </NavLink>
+            )}
           </div>
         </div>
       )}

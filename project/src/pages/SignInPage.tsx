@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock, User, Eye, EyeOff, ArrowRight, Check, X } from 'lucide-react';
+import { useUser } from '../context/UserContext';
 
 const SignInPage = () => {
   const navigate = useNavigate();
+  const { setUser } = useUser();
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -86,6 +88,7 @@ const SignInPage = () => {
     e.preventDefault();
     if (validateForm()) {
       // TODO: Implement actual authentication logic here
+      setUser({ name: isLogin ? 'User' : formData.name });
       console.log('Form submitted:', formData);
       navigate('/'); // Redirect to home page after successful login/registration
     }

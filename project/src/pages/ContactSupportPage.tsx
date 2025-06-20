@@ -40,11 +40,11 @@ const ContactSupportPage = () => {
           <div className="space-y-4">
             <div>
               <h3 className="font-medium text-gray-700">Email</h3>
-              <p className="text-gray-600">support@rooftopgarden.com</p>
+              <p className="text-gray-600">support@veggiebuddy.com</p>
             </div>
             <div>
               <h3 className="font-medium text-gray-700">Phone</h3>
-              <p className="text-gray-600">+1 (555) 123-4567</p>
+              <p className="text-gray-600">+91 1234567890</p>
             </div>
             <div>
               <h3 className="font-medium text-gray-700">Hours</h3>
