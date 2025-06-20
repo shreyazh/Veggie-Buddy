@@ -12,7 +12,7 @@ const TutorialsPage = () => {
       level: "Beginner",
       image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       icon: <BookOpen className="h-6 w-6 text-green-600" />,
-      path: "/tutorials/planning"
+      path: "https://www.youtube.com/watch?v=9z-PIX_cC-s"
     },
     {
       id: 'building',
@@ -22,7 +22,7 @@ const TutorialsPage = () => {
       level: "Intermediate",
       image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       icon: <BarChart2 className="h-6 w-6 text-green-600" />,
-      path: "/tutorials/building"
+      path: "https://www.youtube.com/watch?v=UmMw0jPYKvs"
     },
     {
       id: 'irrigation',
@@ -32,7 +32,7 @@ const TutorialsPage = () => {
       level: "Advanced",
       image: "https://extension.okstate.edu/fact-sheets/images/managing-pressure-in-the-home-irrigation-system/hunter-irrigation-overview.png",
       icon: <Droplets className="h-6 w-6 text-green-600" />,
-      path: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcreatiwise.com%2Fdesigning-a-comprehensive-irrigation-system%2F&psig=AOvVaw0d17fO_1mHN8OBgTQPH_YF&ust=1750274631770000&source=images&cd=vfe&opi=89978449&ved=0CBgQ3YkBahcKEwi48Kmel_mNAxUAAAAAHQAAAAAQCw"
+      path: "https://www.youtube.com/watch?v=b_ldCBnYk8M&pp=0gcJCfcAhR29_xXO"
     },
     {
       id: 'plant-selection',
@@ -42,7 +42,7 @@ const TutorialsPage = () => {
       level: "Beginner",
       image: "https://i.pinimg.com/736x/84/d8/a1/84d8a1afc393612acc698b3543377bee.jpg",
       icon: <Sun className="h-6 w-6 text-green-600" />,
-      path: "/tutorials/plant-selection"
+      path: "https://m.youtube.com/watch?v=BEzSrYIs7xk"
     },
     {
       id: 'pest-management',
@@ -52,7 +52,7 @@ const TutorialsPage = () => {
       level: "Intermediate",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaIASyAIaZ5P8gC1VySWGalJaAKWQ98qlAjQ&s",
       icon: <Bug className="h-6 w-6 text-green-600" />,
-      path: "/tutorials/pest-management"
+      path: "https://www.youtube.com/watch?v=79LQ0nOYlKU"
     },
     {
       id: 'weather-protection',
@@ -62,7 +62,7 @@ const TutorialsPage = () => {
       level: "Intermediate",
       image: "https://www.greenproventures.com/wp-content/uploads/2023/07/Harnessing-Rain-Shelters-Empowering-Continuous-Farming-during-the-Monsoon-Season.jpg",
       icon: <Wind className="h-6 w-6 text-green-600" />,
-      path: "/tutorials/weather-protection"
+      path: "https://www.youtube.com/watch?v=gk-R8qvaBOU"
     }
   ];
 
