@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-green-700 text-center text-sm text-green-300">
-          <p>&copy; {new Date().getFullYear()} Veggie Buddy. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Veggie Buddy. All rights reserved to Shreyash Srivastva.</p>
         </div>
       </div>
     </footer>
