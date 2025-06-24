@@ -50,7 +50,7 @@ const TutorialsPage = () => {
       description: "Learn effective organic methods to protect your plants from pests.",
       duration: "25 min",
       level: "Intermediate",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaIASyAIaZ5P8gC1VySWGalJaAKWQ98qlAjQ&s",
+      image: "https://english.eruvaaka.com/wp-content/uploads/2023/09/Integrated-Pest-Management-1.jpg",
       icon: <Bug className="h-6 w-6 text-green-600" />,
       path: "https://www.youtube.com/watch?v=79LQ0nOYlKU"
     },

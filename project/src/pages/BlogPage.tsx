@@ -24,7 +24,7 @@ const BlogPage = () => {
       excerpt: "Explore eco-friendly gardening techniques that benefit both your plants and the environment.",
       date: "March 5, 2024",
       author: "Emma Wilson",
-      image: "https://millcreekgardens.com/wp-content/uploads/2016/02/Sustainable-Gardening.jpg"
+      image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/70b26f82-bbb1-4cc9-a304-5c61094a45d3.__CR0,0,970,600_PT0_SX970_V1___.jpg"
     }
   ];
 

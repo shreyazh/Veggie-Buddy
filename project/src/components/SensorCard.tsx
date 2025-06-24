@@ -11,7 +11,7 @@ const SensorCard: React.FC<Props> = ({ data }) => {
       <h2 className="text-xl font-bold mb-4">🌱 Real-Time Sensor Data</h2>
       <p>🌡 Temperature: {data.temperature} °C</p>
       <p>💧 Humidity: {data.humidity} </p>
-      <p>🪴 Moisture: {data.moisture} %</p>    
+      <p>🪴 Moisture: {data.moisture} </p>    
       <p>🔌 Motor: {data.motorStatus ? "ON" : "OFF"}</p>
       <p className="text-sm text-gray-500 mt-2">
         Last Updated: {new Date(data.timestamp).toLocaleString()}

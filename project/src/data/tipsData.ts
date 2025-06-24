@@ -5,7 +5,7 @@ export const tipsData: Tip[] = [
     id: 'tip1',
     title: 'Container Gardening Basics',
     category: 'general',
-    image: 'https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://miro.medium.com/v2/resize:fit:2000/1*XV3fVfGDyS6upPUegoB0nA.png',
     content: [
       'Container gardening is perfect for rooftop gardens, balconies, and other small spaces. With the right containers, soil, and plants, you can grow a thriving garden almost anywhere.',
       'The key to successful container gardening is understanding the unique needs of plants grown in a limited space. From proper soil selection to adequate drainage, each element plays a crucial role in your garden\'s success.'
@@ -38,7 +38,7 @@ export const tipsData: Tip[] = [
     id: 'tip2',
     title: 'Maximizing Small Spaces',
     category: 'general',
-    image: 'https://images.pexels.com/photos/7194914/pexels-photo-7194914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://m.media-amazon.com/images/I/71WffRxu65L.jpg',
     content: [
       'Limited space doesn\'t mean limited gardening possibilities. With creative solutions and smart planning, you can maximize your rooftop or balcony garden to grow an abundance of vegetables.',
       'Vertical gardening, succession planting, and interplanting are just a few techniques that can help you make the most of every square inch of your garden space.'
@@ -137,7 +137,7 @@ export const tipsData: Tip[] = [
     id: 'tip5',
     title: 'Watering Techniques for Container Gardens',
     category: 'watering',
-    image: 'https://images.pexels.com/photos/1210483/pexels-photo-1210483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://sonyasgarden.com/wp-content/uploads/2025/02/container-gardening.jpg',
     content: [
       'Proper watering is one of the most critical aspects of container gardening. Containers dry out faster than in-ground gardens, especially in sunny, windy rooftop conditions.',
       'Learning to water efficiently not only keeps your plants healthy but also conserves water and saves you time and effort in the long run.'
@@ -203,7 +203,7 @@ export const tipsData: Tip[] = [
     id: 'tip7',
     title: 'Water Conservation Techniques',
     category: 'watering',
-    image: 'https://images.pexels.com/photos/869210/pexels-photo-869210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJN9HvtEYg6AI6zw27n6GMWx27Mmdi4l3fQ&s',
     content: [
       'Water is a precious resource, and using it efficiently in your rooftop garden is both environmentally responsible and beneficial for your plants. Container gardens typically need more frequent watering than in-ground gardens, making conservation techniques especially important.',
       'By implementing smart watering practices, you can reduce water usage while still maintaining a thriving garden.'
@@ -269,7 +269,7 @@ export const tipsData: Tip[] = [
     id: 'tip9',
     title: 'Deep Watering Techniques',
     category: 'watering',
-    image: 'https://images.pexels.com/photos/7730184/pexels-photo-7730184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgg0Qu0_52Nz2yksv6r0Dv8XCMS0VWuTWflhyzED3mP3qujkKUbZghk8YgzwqfX8Ft2o&usqp=CAU',
     content: [
       'Deep watering encourages plants to develop strong, extensive root systems that can access moisture even during dry periods. In container gardens, proper deep watering techniques are essential for plant health and drought resistance.',
       'By watering thoroughly but less frequently, you can train your plants to develop deeper roots and become more resilient to heat and water stress.'

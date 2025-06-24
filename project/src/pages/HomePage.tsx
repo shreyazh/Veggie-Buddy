@@ -136,14 +136,14 @@ const HomePage = () => {
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
             <TestimonialCard 
               quote="Veggie Buddy transformed my empty rooftop into a thriving garden. I'm harvesting fresh vegetables every week!"
-              author="Isha Dungrani"
-              location="Surat"
+              author="Isha"
+              location="Lucknow"
               image="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
             <TestimonialCard 
               quote="As a complete beginner, I was intimidated by gardening. The step-by-step guides made it so easy to get started."
               author="Anshumaan Kumar"
-              location="Lucknow"
+              location="Delhi"
               image="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
             <TestimonialCard 
